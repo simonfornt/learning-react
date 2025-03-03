@@ -4,26 +4,22 @@ import viteLogo from '/vite.svg'
 import Navbar from './Navlist'
 import Book from './Book'
 import List from './List'
+import TodoList from './component/TodoList'
 
-function App() {
+
+  const App = () => {
+    const todos = [
+      { id: 1, title: 'Learn React', completed: true },
+      { id: 2, title: 'Build an app', completed: false },
+      { id: 3, title: 'Deploy the app', completed: false },
+    ];
   
-
-  return (
-    <>
-      <Navbar/>
-    <main>
-     
-      <Book title="Mastering React" author="Anthony pham"/>
-      <Book title="Mastering Javascript" author="Simon Piar"/>
-      <List/>
-      
-    </main>
-      
-        
-      
-      
-    </>
-  )
-}
-
-export default App;
+    return (
+      <main>
+        <h1>Todo List</h1>
+        <TodoList todos={todos} />
+      </main>
+    );
+  };
+  
+  export default App;
