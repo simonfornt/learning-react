@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Navbar from './Navlist'
 import Book from './Book'
+import List from './List'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
      
       <Book title="Mastering React" author="Anthony pham"/>
       <Book title="Mastering Javascript" author="Simon Piar"/>
+      <List/>
       
     </main>
       
